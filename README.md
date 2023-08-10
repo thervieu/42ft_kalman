@@ -1,1 +1,2 @@
 # 42ft_kalman
+Implementing a Kalman filter working in real time with a UDP server given by the school (not pushed). Must have estimations in less than 1 second and below 5 meters away from real position.
