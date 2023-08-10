@@ -1,11 +1,12 @@
 CC = g++
 CFLAGS = -std=c++11 -Wall -Wextra -Werror
 
-all:
-	kalman
+all: ft_kalman
 
-kalman: ft_kalman.cpp
-	$(CC) $(CFLAGS) -I/incs/eigen.h -o $@ $<
+ft_kalman: 
+	$(CC) $(CFLAGS) -I/eigen-3.4.0/Eigen/Dense ft_kalman.cpp KalmanFilter.cpp -o $@ $<
 
 clean:
 	rm -f ft_kalman
+
+re: clean all
